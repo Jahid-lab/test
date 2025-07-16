@@ -1,0 +1,7 @@
+#!/bin/bash
+usage=$(df / | tail -1 | awk '{print $5}' | sed 's/%//')
+if [ "$usage" -ge 80 ]; then
+echo "Warning: Disk space is getting full!"
+else
+echo "Disk space is sufficient"
+fi
