@@ -1,0 +1,8 @@
+#!/bin/bash
+read -sp "what is your password: " password
+echo ""
+if [ "$password" = "admin123" ] ; then
+echo "password is correct"
+else 
+echo "incorrect password"
+fi
